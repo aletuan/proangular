@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   getTodoItems() {
-    return this.model.items;
+    // using lambda function or arrow function to filter
+    return this.model.items.filter(item => !item.done);
   }
 }
